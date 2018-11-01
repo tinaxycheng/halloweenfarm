@@ -1,6 +1,14 @@
 /* General Demo Style */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+@font-face {
+font-family: 'Snell Roundhand';
+font-style: normal;
+font-weight: normal;
+src: local('Snell Roundhand'), url('SnellRoundhand.woff') format('woff');
+}
+
+
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
 /* Reset */
@@ -17,7 +25,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #fff;
-	background: #91cfa1;
+	background: black;
 	font-weight: 300;
 }
 
@@ -33,12 +41,10 @@ a:hover {
 .main,
 .container > header {
 	width: 100%;
+	height:100%;
 	margin: 0 auto;
-	padding: 0 1.875em 3.125em 1.875em;
+
 }
-
-
-
 
 .container > header {
 	padding: 2.875em 1.875em 2.875em;
@@ -47,104 +53,57 @@ a:hover {
 }
 
 .container > header h1 {
-	font-size: 2.625em;
+	font-size: 4em;
 	line-height: 1.3;
 	margin: 0;
 	color: #fff;
 	font-weight: 300;
+	font-family:'Snell Roundhand';
 }
 
-.container > header span {
-	display: block;
-	font-size: 60%;
-	color: rgba(255,255,255,0.7);
-	padding: 0 0 0.6em 0.1em;
+.person {
+	position:relative;
+	width: 100%;
+	height:100%;
+	margin: 0 auto;
+
 }
 
-
-.main {
-	max-width: 69em;
-	min-height: 600px;
-	padding: 2em 0 0 0;
+.person svg{
+	width:100%;
+	height:auto;
+	margin-top:20px;
 }
 
-.side {
-	float: right;
-	width: 30%;
-	padding-right: 20px;
-	min-width: 320px;
-	box-shadow: 1px 0 rgba(0,0,0,0.1);
+.info{
+	width:100%;
+	height:40px;
+	position:relative;
 }
-
-.icon{
-	opacity:1;
-	font-size: 2em;
-	padding: 0 1em;
-	margin: 0;
-	line-height: 1.5;
-	float: right;
-	width: 70%;
+.menu-column{
+	width:25%;
+	float:left;
 }
-
-
-
-
-
-@keyframes move{  
-  from{ 
-    left:200px; 
-  }
-  to{ 
-    left:0px; 
-  }
-}
-.person 
-#flower{
-  position:absolute;
-}
-#flower{ 
-  animation-duration:2s; 
-  animation-name:move;
-  animation-direction: normal;
-  animation-iteration-count:1;
-  animation-timing-function:linear; 
-  animation-fill-mode:both;   
-  display:block;
-  margin:0 auto;  
+.info-column{
+	display:none;
+	height:200px;
+	float:left;
+	text-align: left;
+	background-color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 50;
+	font-size: 14px;
 }
 
 .pumpkin :hover{
-
-width:150%;
+width:120%;
 height:auto;
 }
 
-@keyframes anim-plane{ 
-  to{
-    transform:translateY(95px);
-  }    
-}
-
-
-@keyframes fade{
-  0%{ opacity: 0;}
-  10%{ opacity: 1;}
-  90%{ opacity:1;}
-  100%{ opacity:0;}
-}
-
-@keyframes move{  
-  from{ 
-    top:200px; 
-  }
-  to{ 
-    top:1000px; 
-  }
-}
 
 .pumpkin{
+	width:20%;
 	position:absolute;
-	top: -200px;
 	-webkit-transition: all 2s ease;
     -moz-transition: all 2s ease;
     -o-transition: all 2s ease;
@@ -153,20 +112,46 @@ height:auto;
 
 .drop{ 
 	opacity:1;
-	top: 1000px; 
+	top: 200px; 
+}
+
+.pumpkin-0{
+  width:15%;
+  left:20%;
+  top:20px;
 }
 
 .pumpkin-1{
   left:0%;
+  top:280px;
 }
 
 .pumpkin-2{
-  left:20%;
+  left:60%;
+  top:190px;
 }
 
 
 .pumpkin-3{
-  right:20%;
+  left:80%;
+  top:330px;
 }
 
+
+
+
+
+ul li{
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	font-style: italic;
+
+}
+
+
+ul li a:hover {
+	color: #DAACA1;
+}
 
